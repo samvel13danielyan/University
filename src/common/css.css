@@ -9,16 +9,13 @@
 .header {
     box-sizing: border-box;
     width: 100%;
-    /* Make the header take up the full width */
     height: 40px;
     background: #B1040E;
     display: flex;
     justify-content: flex-start;
-    /* Align text to the left */
     align-items: center;
     z-index: 0;
     padding-left: 20px;
-    /* Add some padding from the left edge */
 }
 
 /* Header text */
@@ -26,19 +23,15 @@
     font-family: 'SHK Aida', sans-serif;
     font-style: normal;
     font-weight: 500;
+    margin-left: 55px;
     font-size: 14px;
     line-height: 150%;
     text-align: left;
-    /* Align text to the left */
     color: #FFFFFF;
     width: auto;
-    /* Ensure text doesn't overflow */
     max-width: 400px;
-    /* Set a max width to prevent stretching */
     padding-right: 20px;
-    /* Optional: space from the right side */
     white-space: nowrap;
-    /* Prevent text from wrapping */
 }
 
 /* Responsive Design */
@@ -63,60 +56,36 @@
     }
 }
 
-/* Global Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* NavBar */
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 72px;
-    width: 1440px;
+    width: 100%;
     height: 86px;
     background: rgba(255, 255, 255, 0.89);
     border-bottom: 1px solid #BEBEBE;
     z-index: 1;
 }
-
-/* Logo Section */
-.logo-container {
+.navbar .container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
-    gap: 8px;
-    width: 233px;
-    height: 45px;
+    margin-left: 72px;
+    /* margin-right: 140px; */
 }
-
-.logo {
+.navbar .container img {
     width: 158px;
     height: 45px;
-    background: url("output-onlinepngtools.png") no-repeat center;
-    background-size: contain;
 }
-
-.divider {
-    width: 67px;
-    height: 30px;
+.navbar .container span{
     border-left: 1px solid #B1040E;
-    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-}
-
-.divider-text {
-    font-family: 'SHK Aida', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 150%;
-    color: #2E2D29;
 }
 
 /* Navigation Links */
@@ -125,101 +94,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 24px;
-    width: 913px;
     height: 80px;
-}
-
-.nav-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    height: 80px;
-}
-
-.nav-item.active {
-    border-bottom: 2px solid #D83935;
-}
-
-.nav-item span {
-    font-family: 'Montserrat arm', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #222222;
-}
-
-/* Language Selector */
-.lang-selector {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    width: 205px;
-    height: 40px;
-}
-
-.lang-option {
-    display: flex;
-    align-items: center;
-    border-radius: 37px;
-    padding: 0 8px;
-    font-family: 'Montserrat arm', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #222222;
-}
-
-.lang-option .arrow {
-    width: 16px;
-    height: 16px;
-    background: #222222;
-    margin-left: 5px;
-}
-
-/* CTA Button */
-.cta-container {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    width: 140px;
-    height: 40px;
-}
-
-.cta-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 24px;
-    width: 140px;
-    height: 40px;
-    background: #D83935;
-    border-radius: 8px;
-    font-family: 'Montserrat arm', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-.NavBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 72px;
-    width: 100%;
-    height: 86px;
-    background: rgba(255, 255, 255, 0.89);
-    border-bottom: 1px solid #BEBEBE;
-}
-
-.logo img {
-    height: 45px;
-}
-
-.nav-links {
-    display: flex;
     gap: 24px;
 }
 
@@ -227,20 +102,19 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 500;
     color: #222222;
 }
 
 .language-selector {
     display: flex;
     align-items: center;
-    gap: 8px;
     cursor: pointer;
 }
 
 .arrow-drop-down {
-    width: 16px;
-    height: 16px;
+    width: 7px;
+    height: 3px;
+    margin: 5px;
     background: #222222;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
@@ -248,10 +122,78 @@
 .write-now-button {
     background: #D83935;
     padding: 8px 24px;
+    margin-right: 70px;
     border-radius: 8px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 600;
     color: white;
     cursor: pointer;
+}
+
+/* Frame */
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50px;
+    padding: 40px 0px;
+    gap: 325px;
+    width: 100%;
+    max-width: 1296px;
+    height: 118px;
+    overflow-x: hidden;
+}
+
+/* Event Calendar Title (left side) */
+.event-calendar-title {
+    width: auto;
+    height: 36px;
+    font-family: 'SHK Aida', sans-serif;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #202224;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Search Box (right side) */
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 520px;
+    height: 38px;
+    margin-right: 50px;
+    border: 1px solid #BCBFC3;
+    border-radius: 47px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+}
+
+/* Search Input Field */
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat arm', sans-serif;
+    font-size: 14px;
+    color: #202224;
+    background: transparent;
+}
+
+/* Optional: Remove the default input background */
+.search-input::placeholder {
+    color: #202224;
 }
