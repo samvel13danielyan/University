@@ -1,8 +1,11 @@
+import Header from "../common/Header";
+import NavBar from "../common/Navbar";
 
 function Events() {
     return (
         <>
-            <h2>This is the Events Page</h2>
+            <Header />
+            <NavBar />
         </>
     );
 }

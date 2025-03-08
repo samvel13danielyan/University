@@ -6,6 +6,9 @@ import RecommendedEvents from "./RecommendedEvents";
 import ArrowNavigation from "./ArrowNavigation";
 import Articles from "./Articles";
 import ResearchByNumbers from "./ResearchByNumbers";
+import News from "./News";
+import LearnMore from "../common/LearnMore";
+import Footer from "../common/Footer";
 
 function Home() {
     return (
@@ -18,6 +21,9 @@ function Home() {
             <ArrowNavigation />
             <Articles />
             <ResearchByNumbers />
+            <News />
+            <LearnMore />
+            <Footer />
         </>
     );
 }

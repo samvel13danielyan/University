@@ -1,8 +1,13 @@
+import Footer from "../common/Footer";
+import Header from "../common/Header";
+import NavBar from "../common/Navbar";
 
 function Submission() {
     return (
         <>
-            <h2>This is the Submission Page</h2>
+            <Header />
+            <NavBar />
+            <Footer />
         </>
     );
 }

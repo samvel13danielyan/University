@@ -1,8 +1,13 @@
+import Header from "../common/Header";
+import NavBar from "../common/Navbar";
+import SearchEvents from "../common/SearchEvents";
 
 function EventTicket() {
     return (
         <>
-            <h2>This is the EventTicket Page</h2>
+            <Header />
+            <NavBar />
+            <SearchEvents />
         </>
     );
 }

@@ -1,8 +1,13 @@
+import Footer from "../common/Footer";
+import Header from "../common/Header";
+import NavBar from "../common/Navbar";
 
 function Editor() {
     return (
         <>
-            <h2>This is the Editor Page</h2>
+            <Header />
+            <NavBar />
+            <Footer />
         </>
     );
 }
