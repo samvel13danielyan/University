@@ -4,6 +4,8 @@ import NavBar from "../common/Navbar";
 import Resource from "../common/Resource";
 import ImageTitle from "./ImageTitle";
 import PresentationProgress from "./PresentationProgress";
+import Main from "./Main";
+
 
 function TitleSelection() {
     return (
@@ -14,6 +16,8 @@ function TitleSelection() {
                 <Resource />
                 <ImageTitle />
                 <PresentationProgress />
+                {/* <TitleNavigation /> */}
+                <Main />
                 <Footer />
             </>
         </>
